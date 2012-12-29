@@ -116,7 +116,8 @@
 {
     /* Move the toolbar to above the keyboard */
 	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.3];
+	[UIView setAnimationDuration:[[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
+    [UIView setAnimationCurve:[[[notification userInfo] objectForKey:UIKeyboardAnimationCurveUserInfoKey] intValue]];
 	CGRect frame = self.inputToolbar.frame;
     if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
         frame.origin.y = self.view.frame.size.height - frame.size.height - kKeyboardHeightPortrait;
@@ -133,7 +134,8 @@
 {
     /* Move the toolbar back to bottom of the screen */
 	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.3];
+    [UIView setAnimationDuration:[[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
+    [UIView setAnimationCurve:[[[notification userInfo] objectForKey:UIKeyboardAnimationCurveUserInfoKey] intValue]];
 	CGRect frame = self.inputToolbar.frame;
     if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
         frame.origin.y = self.view.frame.size.height - frame.size.height;
