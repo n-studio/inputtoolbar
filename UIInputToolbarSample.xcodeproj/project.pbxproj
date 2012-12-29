@@ -31,6 +31,8 @@
 		E2CC34F0168F09B8003E60BE /* textbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E515C67D47003829EC /* textbg@2x.png */; };
 		E2CC34F1168F09B8003E60BE /* toolbarbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E615C67D47003829EC /* toolbarbg.png */; };
 		E2CC34F2168F09B8003E60BE /* toolbarbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E715C67D47003829EC /* toolbarbg@2x.png */; };
+		E2CC3506168F104D003E60BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3A7B9513708CDE00CF5E6B /* CoreGraphics.framework */; };
+		E2CC3507168F10B1003E60BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3A7B9113708CDE00CF5E6B /* UIKit.framework */; };
 		FF4851E815C67D47003829EC /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E215C67D47003829EC /* buttonbg.png */; };
 		FF4851E915C67D47003829EC /* buttonbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E315C67D47003829EC /* buttonbg@2x.png */; };
 		FF4851EA15C67D47003829EC /* textbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E415C67D47003829EC /* textbg.png */; };
@@ -95,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CC3507168F10B1003E60BE /* UIKit.framework in Frameworks */,
+				E2CC3506168F104D003E60BE /* CoreGraphics.framework in Frameworks */,
 				E2CC34D9168EC512003E60BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,13 +353,13 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -369,7 +373,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -416,7 +420,7 @@
 				DSTROOT = /tmp/UIInputToolbar.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIInputToolbar/UIInputToolbar-Prefix.pch";
+				GCC_PREFIX_HEADER = "UIInputToolbarSample/UIInputToolbarSample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -442,7 +446,7 @@
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/UIInputToolbar.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIInputToolbar/UIInputToolbar-Prefix.pch";
+				GCC_PREFIX_HEADER = "UIInputToolbarSample/UIInputToolbarSample-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
@@ -480,6 +484,7 @@
 				E2CC34E2168EC512003E60BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
