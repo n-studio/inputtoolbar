@@ -126,6 +126,18 @@
     r.origin.y += diff;
     r.size.height -= diff;
     self.frame = r;
+    if ([delegate respondsToSelector:@selector(expandingTextView:willChangeHeight:)])
+    {
+        [delegate expandingTextView:self willChangeHeight:height];
+    }
+}
+
+-(void)expandingTextView:(UIExpandingTextView *)expandingTextView didChangeHeight:(float)height
+{
+    if ([delegate respondsToSelector:@selector(expandingTextView:didChangeHeight:)])
+    {
+        [delegate expandingTextView:self didChangeHeight:height];
+    }
 }
 
 -(void)expandingTextViewDidChange:(UIExpandingTextView *)expandingTextView

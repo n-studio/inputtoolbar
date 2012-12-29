@@ -252,6 +252,9 @@
 /* Begin PBXProject section */
 		CA3A7B8413708CDE00CF5E6B /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = CA3A7B8713708CDE00CF5E6B /* Build configuration list for PBXProject "UIInputToolbarSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
