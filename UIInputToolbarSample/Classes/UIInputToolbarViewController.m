@@ -150,5 +150,9 @@
 {
     /* Called when toolbar button is pressed */
     NSLog(@"Pressed button with text: '%@'", inputText);
+    
+    /* Remove the keyboard and clear the text */
+    [self.inputToolbar.textView resignFirstResponder];
+    [self.inputToolbar.textView clearText];
 }
 @end

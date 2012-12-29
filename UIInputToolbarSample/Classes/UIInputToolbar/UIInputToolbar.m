@@ -37,10 +37,6 @@
     {
         [delegate inputButtonPressed:self.textView.text];
     }
-    
-    /* Remove the keyboard and clear the text */
-    [self.textView resignFirstResponder];
-    [self.textView clearText];
 }
 
 -(void)setupToolbar:(NSString *)buttonLabel
