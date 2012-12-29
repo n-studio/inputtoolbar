@@ -19,6 +19,18 @@
 		CA3A7BA513708CDF00CF5E6B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3A7BA313708CDF00CF5E6B /* MainWindow.xib */; };
 		CADA5F07137891FD0046E8AA /* UIInputToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADA5F06137891FD0046E8AA /* UIInputToolbarViewController.m */; };
 		E2CC34D9168EC512003E60BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3A7B9313708CDE00CF5E6B /* Foundation.framework */; };
+		E2CC34E5168F0992003E60BE /* UIExpandingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0C9C27137879DA0097DB28 /* UIExpandingTextView.m */; };
+		E2CC34E6168F0992003E60BE /* UIExpandingTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0C9C29137879DA0097DB28 /* UIExpandingTextViewInternal.m */; };
+		E2CC34E7168F0992003E60BE /* UIInputToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0C9C2B137879DA0097DB28 /* UIInputToolbar.m */; };
+		E2CC34E9168F09A2003E60BE /* UIExpandingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0C9C26137879DA0097DB28 /* UIExpandingTextView.h */; };
+		E2CC34EA168F09A2003E60BE /* UIExpandingTextViewInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0C9C28137879DA0097DB28 /* UIExpandingTextViewInternal.h */; };
+		E2CC34EB168F09A2003E60BE /* UIInputToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0C9C2A137879DA0097DB28 /* UIInputToolbar.h */; };
+		E2CC34ED168F09B8003E60BE /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E215C67D47003829EC /* buttonbg.png */; };
+		E2CC34EE168F09B8003E60BE /* buttonbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E315C67D47003829EC /* buttonbg@2x.png */; };
+		E2CC34EF168F09B8003E60BE /* textbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E415C67D47003829EC /* textbg.png */; };
+		E2CC34F0168F09B8003E60BE /* textbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E515C67D47003829EC /* textbg@2x.png */; };
+		E2CC34F1168F09B8003E60BE /* toolbarbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E615C67D47003829EC /* toolbarbg.png */; };
+		E2CC34F2168F09B8003E60BE /* toolbarbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E715C67D47003829EC /* toolbarbg@2x.png */; };
 		FF4851E815C67D47003829EC /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E215C67D47003829EC /* buttonbg.png */; };
 		FF4851E915C67D47003829EC /* buttonbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E315C67D47003829EC /* buttonbg@2x.png */; };
 		FF4851EA15C67D47003829EC /* textbg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4851E415C67D47003829EC /* textbg.png */; };
@@ -181,6 +193,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E2CC34E8168F099B003E60BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CC34E9168F09A2003E60BE /* UIExpandingTextView.h in Headers */,
+				E2CC34EA168F09A2003E60BE /* UIExpandingTextViewInternal.h in Headers */,
+				E2CC34EB168F09A2003E60BE /* UIInputToolbar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		CA3A7B8C13708CDE00CF5E6B /* UIInputToolbarSample */ = {
 			isa = PBXNativeTarget;
@@ -206,6 +231,8 @@
 				E2CC34D4168EC512003E60BE /* Sources */,
 				E2CC34D5168EC512003E60BE /* Frameworks */,
 				E2CC34D6168EC512003E60BE /* CopyFiles */,
+				E2CC34E8168F099B003E60BE /* Headers */,
+				E2CC34EC168F09AD003E60BE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -233,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA3A7B8C13708CDE00CF5E6B /* UIInputToolbarSample */,
 				E2CC34D7168EC512003E60BE /* UIInputToolbar */,
+				CA3A7B8C13708CDE00CF5E6B /* UIInputToolbarSample */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +279,19 @@
 				FF4851EB15C67D47003829EC /* textbg@2x.png in Resources */,
 				FF4851EC15C67D47003829EC /* toolbarbg.png in Resources */,
 				FF4851ED15C67D47003829EC /* toolbarbg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CC34EC168F09AD003E60BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CC34ED168F09B8003E60BE /* buttonbg.png in Resources */,
+				E2CC34EE168F09B8003E60BE /* buttonbg@2x.png in Resources */,
+				E2CC34EF168F09B8003E60BE /* textbg.png in Resources */,
+				E2CC34F0168F09B8003E60BE /* textbg@2x.png in Resources */,
+				E2CC34F1168F09B8003E60BE /* toolbarbg.png in Resources */,
+				E2CC34F2168F09B8003E60BE /* toolbarbg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CC34E5168F0992003E60BE /* UIExpandingTextView.m in Sources */,
+				E2CC34E6168F0992003E60BE /* UIExpandingTextViewInternal.m in Sources */,
+				E2CC34E7168F0992003E60BE /* UIInputToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
