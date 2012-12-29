@@ -128,7 +128,7 @@
     self.frame = r;
     if ([delegate respondsToSelector:@selector(expandingTextView:willChangeHeight:)])
     {
-        [delegate expandingTextView:self willChangeHeight:height];
+        [delegate expandingTextView:expandingTextView willChangeHeight:height];
     }
 }
 
@@ -136,7 +136,7 @@
 {
     if ([delegate respondsToSelector:@selector(expandingTextView:didChangeHeight:)])
     {
-        [delegate expandingTextView:self didChangeHeight:height];
+        [delegate expandingTextView:expandingTextView didChangeHeight:height];
     }
 }
 
