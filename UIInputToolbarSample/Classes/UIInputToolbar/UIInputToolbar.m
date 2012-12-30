@@ -126,7 +126,7 @@
     r.origin.y += diff;
     r.size.height -= diff;
     self.frame = r;
-    if ([delegate respondsToSelector:@selector(expandingTextView:willChangeHeight:)])
+    if (diff != 0.0 && [delegate respondsToSelector:@selector(expandingTextView:willChangeHeight:)])
     {
         [delegate expandingTextView:expandingTextView willChangeHeight:height];
     }

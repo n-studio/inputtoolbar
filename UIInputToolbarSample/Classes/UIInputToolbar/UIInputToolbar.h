@@ -29,6 +29,8 @@
 @protocol UIInputToolbarDelegate <NSObject>
 @optional
 -(void)inputButtonPressed:(NSString *)inputText;
+-(void)expandingTextView:(UIExpandingTextView *)expandingTextView willChangeHeight:(float)height;
+-(void)expandingTextView:(UIExpandingTextView *)expandingTextView didChangeHeight:(float)height;
 @end
 
 @interface UIInputToolbar : UIToolbar <UIExpandingTextViewDelegate> 
